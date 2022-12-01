@@ -6,6 +6,6 @@ flex-direction: row;
 
 .container__menu-bar > ul > li {
     margin-right: 30px;
-    list-style: nome;
+    list-style: none;
 
     }
