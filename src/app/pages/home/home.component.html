@@ -1,21 +1,45 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-
-
-
 <app-menu-title></app-menu-title>
-
 
 
 <div class="container__articles">
     <div class="articles__main">
-        <app-big-card></app-big-card>
-      </div>
+      <app-big-card
+      id="1"
+       photoCover= "data:image/png;base64,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"
+
+       cardTitle = "id 1"
+       cardDescription = "id 11111"
+       >
+      </app-big-card>
+     </div>
     <div class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+    id="2"
+    cardTitle="id2222222222222222"
+    photoCover=""
+    >
+  </app-small-card>
+ 
+
+  <app-small-card
+  id="3"
+    cardTitle="id3333333333333333333"
+    photoCover=""
+    >
+  </app-small-card>
+
+  <app-small-card
+  id="4"
+    cardTitle="id444444444444444444444444"
+    photoCover=""
+    >
+  </app-small-card>
+
+
+
+
+
+   
 
     </div>
     
